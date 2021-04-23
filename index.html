@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+<body background="img/fundo2.jpg">
+
+    <div class="campo">
+        <h1 id="titulo">Cadastro de DEVs</h1>
+        <p id="subtitulo">Preencha suas informações</p>
+        <br>
+    </div>
+<!--Aqui começa o formuláro-->
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong> Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="text" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label>Você é desenvolvedor:</label>
+                <label for="dev">
+                    <input type="radio" name="dev" value="frontend"> <strong>Frontend</strong>
+                </label>
+                <label for="dev">
+                    <input type="radio" name="dev" value="backend"> <strong>Backend</strong>
+                </label>
+                <label for="dev">
+                    <input type="radio" name="dev" value="fullstack"> <strong>fullstack</strong>
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioridade">Senioridade</label>
+                <select id="senioridade">
+                    <option selected disabled value="" >Selecione</option>
+                    <option> <strong>Estagiário</strong></option>
+                    <option><strong>Junior</strong></option>
+                    <option><strong>Pleno</strong></option>
+                    <option><strong>Senior</strong></option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="grupo" >
+            <div id="checkbox">
+                <label for="tecnologia">Selecione as tecnologias que você utiliza:</label>
+                <br>
+                <br>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="HTML">
+                <label for="tecnologia"><strong>HTML</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="CSS">
+                <label for="tecnologia"><strong>CSS</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="JavaScript">
+                <label for="tecnologia"><strong>JavaScript</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="PHP">
+                <label for="tecnologia"><strong>PHP</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="C#">
+                <label for="tecnologia"><strong>C#</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="Python">
+                <label for="tecnologia"><strong>Python</strong> </label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="Java">
+                <label for="tecnologia"><strong>Java</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="C++">
+                <label for="tecnologia"><strong>C++</strong></label>
+                <input type="checkbox" id="tecnologia" name="tecnologia" value="C">
+                <label for="tecnologia"><strong>C</strong></label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="">Conte um pouco da sua experiência</label>
+            <textarea name="" id="texto" cols="30" rows="6"></textarea>
+            
+        </div>
+        <br>
+        <button type="submit" class="botao">Finalizar</button>
+    </form>
+    
+</body>
+</html>
